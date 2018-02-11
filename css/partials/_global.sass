@@ -1,5 +1,6 @@
 html
 	box-sizing: border-box
+	font-size: $size-typo-m
 	font-family: $mainFont
 
 *,
@@ -7,11 +8,51 @@ html
 *::before
 	box-sizing: inherit
 
+h1
+	font-size: $size-typo-xxxxl
+
+h2
+	font-size: $size-typo-xxxl
+
+h3
+	font-size: $size-typo-xxl
+
+h4
+	font-size: $size-typo-xl
+
+h5
+	font-size: $size-typo-l
+
+h6
+	font-size: $size-typo-m
+
+p
+	line-height: $lh-typo-l
+
+
+ul, ol
+	padding: 0 0 0 $space-m
+	margin: $space-l 0
+	line-height: $lh-typo-xl
+
+table
+	line-height: $lh-typo-l
+	border-collapse: collapse
+	thead
+		td
+			font-size: 18px
+			font-weight: bold
+	td
+		padding: $space-m $space-l
+		border-bottom: 1px solid $lightgray
+		&:first-child
+			padding-left: 0
+
 //Helpers
 //Clear flow
 .clearfix
 	&::after
-		content: ''
+		content: ""
 		display: table
 		clear: both
 
