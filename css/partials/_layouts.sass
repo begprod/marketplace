@@ -1,14 +1,13 @@
 // g- global layout
 // l- layout is allways inside in g-
 
-.g-wrapper
+.g-section
+	padding: $space-xxxl
+	&__head
+
+.l-wrapper
 	width: 1280px
 	margin: 0 auto
-	// border: 1px solid red
-
-.g-section
-	margin: 100px auto // TODO: REMOVE
-	&__head
 
 .l-cards
 	display: flex
@@ -17,4 +16,4 @@
 	justify-content: flex-start
 	align-items: flex-start
 	width: 100%
-	border: 3px solid blue
+	margin: $space-l auto

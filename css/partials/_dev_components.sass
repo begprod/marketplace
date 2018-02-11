@@ -14,8 +14,8 @@
 
 // CARDS
 .card
-	border: 5px solid purple
-	padding: $space-l
+	padding: $space-l $space-xxxl $space-l 0
+	text-align: center
 	&--4
 		flex-basis: 25%
 	&--3
@@ -24,12 +24,28 @@
 		flex-basis: 50%
 
 	&__content
-		border: 1px solid green
+		padding: $space-m
+		background-color: white
+		box-shadow: 0 5px 20px $lightgray
 
 	&__img
+		display: block
+		height: 275px
+		margin-bottom: $space-xl
+		text-align: center
+		overflow: hidden
+		img
+			width: auto
+			height: auto
 
 	&__name
+		display: block
+		margin-bottom: $space-xl
 
 	&__descr
+		display: block
+		margin-bottom: $space-xl
 
 	&__btn
+		display: block
+		margin-bottom: $space-xl
