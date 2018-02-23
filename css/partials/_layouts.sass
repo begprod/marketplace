@@ -3,17 +3,32 @@
 
 .g-section
 	padding: $space-xxxl
-	&__head
 
 .l-wrapper
 	width: 1280px
 	margin: 0 auto
 
 .l-cards
-	display: flex
-	flex-direction: row
-	flex-wrap: wrap
-	justify-content: flex-start
-	align-items: flex-start
-	width: 100%
-	margin: $space-l auto
+	padding: $space-l 0
+	&--2
+		.l-cards__item
+			flex-basis: 50%
+			&:nth-child(2n)
+				padding-right: 0
+	&--3
+		.l-cards__item
+			flex-basis: 33.33333%
+			&:nth-child(3)
+				padding-right: 0
+	&--4
+		.l-cards__item
+			flex-basis: 25%
+			&:nth-child(4n)
+				padding-right: 0
+	&__inner
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: flex-start
+		align-items: flex-start
+		width: 100%
