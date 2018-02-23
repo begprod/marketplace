@@ -11,13 +11,26 @@
 	vertical-align: top
 	padding: $space-xs $space-m
 	border: 1px solid gray
+	text-decoration: none
+	cursor: pointer
 
-// CARDS
+// HERO
+.hero
+	&__slider
+		width: 100%
+		height: 600px
+
+// PRODUCTS CARDS
 .card
+	display: flex
 	padding: $space-m $space-m $space-m 0
 	text-align: center
 
 	&__content
+		flex-grow: 1
+		display: flex
+		flex-direction: column
+		justify-content: space-between
 		padding: $space-m
 		background-color: white
 		box-shadow: 0 5px 20px $lightgray
@@ -31,14 +44,20 @@
 		img
 			width: auto
 			height: auto
+			object-fit: cover
 
 	&__name
 		display: block
 		margin-bottom: $space-xl
+		text-decoration: none
 
 	&__descr
 		display: block
+		margin: 0 auto $space-xl auto
+
+	&__price
 		margin-bottom: $space-xl
+		font-size: $size-typo-xxl
 
 	&__btn
 		display: block
