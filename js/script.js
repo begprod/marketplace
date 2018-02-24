@@ -1,1 +1,3 @@
-$(document).ready(function(){console.log("Alive!!!")});
+$(document).ready(function() {
+    //= partials/_script.js
+});
